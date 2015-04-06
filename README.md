@@ -40,7 +40,7 @@ docker build -t <username>/go_location_state:0.1 ./
 
 ```
 
-In order for `docker run --rm -v $(pwd):/src centurylink/golang-builder` to work you need to have the github url on the top line of main.go. It should look like this:
+In order for the golang-builder to work, you need to have the github url on the top line of main.go. It should look like this:
 ```
 package main // import "github.com/cloudspace/Go_Location_State"
 ```
