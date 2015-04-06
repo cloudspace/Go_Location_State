@@ -29,3 +29,6 @@ microservice:
     result:
       param_type: 'String'
       description: 'State'
+    error:
+      param_type: 'String'
+      description: 'Error Message'

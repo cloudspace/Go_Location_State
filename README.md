@@ -11,7 +11,7 @@ Input must have 2 arguments:
 -
 Input:
 ```
-go run main.go 28.1 81.6
+go run main.go 28.1 -81.6
 ```
 Output (Success):
 ```
