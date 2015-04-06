@@ -1,0 +1,31 @@
+microservice:
+  spec_version: '2.0'
+  name: 'Go_Location_State'
+  description: 'A Go Microservice to return a state for latitude and longitude.'
+  docker_image: 'izackp/go_location_state'
+  docker_image_tag: '0.1'
+  repo_url: 'https://github.com/cloudspace/Go_Location_State'
+  docker_hub_url: 'https://registry.hub.docker.com/u/izackp/go_location_state/'
+  category: 'URL'
+  tags: ['geolocation', 'state', 'go', 'golang']
+  developer_name: 'isaac'
+  developer_type: 'User'
+  published: true
+  command: '/Go_Location_State [lat] [long]'
+  inputs:
+    lat:
+      param_type: 'Number'
+      regex: '^[0-9.-]+$'
+      required: true
+      secure: false
+      description: 'Latitude'
+    long:
+      param_type: 'Number'
+      regex: '^[0-9.-]+$'
+      required: true
+      secure: false
+      description: 'Longitude'
+  outputs:
+    result:
+      param_type: 'String'
+      description: 'State'
