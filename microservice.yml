@@ -3,7 +3,7 @@ microservice:
   name: 'Go_Location_State'
   description: 'A Go Microservice to return a state for latitude and longitude.'
   docker_image: 'izackp/go_location_state'
-  docker_image_tag: '0.1'
+  docker_image_tag: '0.2'
   repo_url: 'https://github.com/cloudspace/Go_Location_State'
   docker_hub_url: 'https://registry.hub.docker.com/u/izackp/go_location_state/'
   category: 'URL'
@@ -26,9 +26,9 @@ microservice:
       secure: false
       description: 'Longitude'
   outputs:
-    result:
+    state:
       param_type: 'String'
-      description: 'State'
+      description: 'State returned for specified latitude and longitude if found.'
     error:
       param_type: 'String'
       description: 'Error Message'

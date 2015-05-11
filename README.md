@@ -11,17 +11,18 @@ Input must have 2 arguments:
 -
 Input:
 ```
-go run main.go 28.1 -81.6
+go run main.go 40.774576 -73.952545
 ```
 Output (Success):
 ```
-{"result":"Florida"}
+{"error":"","state":"Florida"}
 ```
 -
 Output (Failure):
 ```
 {
-  "error":"<error message>"
+  "error":"<error message>",
+  "state":""
 }
 ```
 
@@ -33,8 +34,8 @@ Requirements:
 3. Boot2docker running
 
 ```
-go get github.com/cloudspace/Go_Location_State
-cd <Go_Location_State Directory>
+go get github.com/cloudspace/Go_Location_Country
+cd <Go_Location_Country Directory>
 docker run --rm -v $(pwd):/src centurylink/golang-builder
 docker build -t <username>/go_location_state:0.1 ./
 
